@@ -7,14 +7,14 @@
 
 import UIKit
 
-class FirstScreen: UIViewController {
+class IndexScreen: UIViewController {
     
     let nextButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButton()
-        title = "First Screen"
+        title = "First"
         // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -25,7 +25,7 @@ class FirstScreen: UIViewController {
         
         nextButton.configuration = .filled()
         nextButton.configuration?.baseBackgroundColor = .systemPurple
-        nextButton.configuration?.title = "Next screen"
+        nextButton.configuration?.title = "screen"
         
         nextButton.addTarget(self, action: #selector(goToNextScreen), for: .touchUpInside)
         
